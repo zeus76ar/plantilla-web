@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Mi Ejemplo</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../jquery.treeview.css" />
+		<!-- JS -->
+		<script src="../lib/jquery.js" type="text/javascript"></script>
+		<!-- <script src="../lib/jquery.cookie.js" type="text/javascript"></script> -->
+		<script src="../jquery.treeview.js" type="text/javascript"></script>
+		<!-- -->
+		<style type="text/css">
+		html, body {height:100%; margin: 0; padding: 0; }
+		
+		html>body {
+			font-size: 16px; 
+			font-size: 68.75%;
+		} /* Reset Base Font Size */
+		
+		body {
+			font-family: Verdana, helvetica, arial, sans-serif;
+			font-size: 68.75%;
+			background: #fff;
+			color: #333;
+		}
+		</style>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#browser").treeview({
+				//unique: true/
+				animated: "fast"
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div>
+			<ul id="browser" class="filetree">
+				<li>
+					<span class="folder">Root</span>
+					<ul>
+						<li  class="closed">
+						<span class="folder">Folder 1</span>
+						<ul>
+							<li><span class="file"><a href="javascript:alert('click en Item 1.1')">Item 1.1</a></span></li>
+						</ul>
+						</li>
+						<li class="closed">
+							<span class="folder">Folder 2</span>
+							<ul>
+								<li class="closed">
+									<span class="folder">Subfolder 2.1</span>
+									<ul id="folder21">
+										<li><span class="file">File 2.1.1</span></li>
+										<li><span class="file">File 2.1.2</span></li>
+									</ul>
+								</li>
+								<li><span class="file">File 2.2</span></li>
+							</ul>
+						</li>
+						<li class="closed">
+							<span class="folder">Folder 3 (closed at start)</span>
+							<ul>
+								<li><span class="file">File 3.1</span></li>
+							</ul>
+						</li>
+						<li><span class="file">File 4</span></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

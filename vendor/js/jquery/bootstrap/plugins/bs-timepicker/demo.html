@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bootstrap Select - Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <!-- bootstrap select -->
+    <link href="./css/bootstrap-timepicker.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+    body {
+        padding-top: 70px;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Demo</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form>
+        <div class="col-md-2 col-sm-3">
+          <div class="input-group bootstrap-timepicker timepicker">
+            <input id="timepicker1" type="text" class="form-control input-small">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.container -->
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../../../jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="../../3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- bootstrap timepicker -->
+    <script src="./js/bootstrap-timepicker.min.js"></script>
+    
+    <script>
+      /*
+       * timepicker options:
+       * 
+       * template: 'dropdown' (default), 'modal', false - Show picker in
+       * a dropdown, show picker in a modal, don't show a widget
+       * 
+       * modalBackdrop: false - Show modal backdrop.
+       * 
+       * showMeridian: true (default), false - 12hr mode, 24hr mode
+       * 
+       * maxHours: 24 - Specify a maximum number of hours the TimePicker can handle.
+       * showMeridian must be set to false.
+       * 
+       * snapToStep: false - If true, setting the time will snap it to the closest
+       * "step", either minute or second, depending on which unit is
+       * currently highlighted. If the number would
+       * otherwise snap to 60 higher, the unit "overflows" to 0.
+       * 
+       * minuteStep: 15 - Specify a step for the minute field.
+       * 
+       * showSeconds: false - Show the seconds field.
+       * 
+       * secondStep: 15 - Specify a step for the second field.
+       * 
+       * defaultTime: 'current' (default), '11:45 AM', false - Set to
+       * the current time, set to a specific time, do not set a default time.
+       * 
+       * showInputs: true (default), false - Shows the text inputs in
+       * the widget, hide the text inputs in the widget.
+       * 
+       * disableFocus: false - Disables the input from focusing. This
+       * is useful for touch screen devices that display a keyboard
+       * on input focus.
+       * 
+       * disableMousewheel: false - Disables the input from changing on
+       * mousewheel events.
+       *
+       * appendWidgetTo: body - Allow for custom placing of the widget.
+       * (no tested)
+       *
+       * explicitMode: false - When true, user can type "123" to set
+       * time to "1:23" or "12345" to set time to "1:23:45".
+       *
+       * icons: { up: 'glyphicon glyphicon-chevron-up',
+       * down: 'glyphicon glyphicon-chevron-down' } - An object with keys
+       * 'up' and 'down' representing CSS class names to be
+       * used for the widget's icon classes.
+       *
+       * Data Attributes:
+       * 
+       * <div class="input-group bootstrap-timepicker timepicker">
+       *   <input id="timepicker" class="form-control"
+       *   data-provide="timepicker" data-template="modal" data-minute-step="1"
+       *   type="text"/>
+       * </div
+       * 
+       * Methods:
+       * 
+       * showWidget - Show the picker widget
+       * var time = $('#timepicker').timepicker('showWidget')
+       *
+       * setTime - Set the time manually
+       * $('#timepicker').timepicker('setTime', '12:45 AM');
+       *
+       * Events:
+       * 
+       * Show - Triggered when dropdown/modal widget is shown
+       * Hide - Triggered when widget is hidden
+       * Update - Triggered when the date is updated
+       * 
+       * $('#timepicker').timepicker().on('show.timepicker', function(e) {
+           console.log('The time is ' + e.time.value);
+           console.log('The hour is ' + e.time.hours);
+           console.log('The minute is ' + e.time.minutes);
+           console.log('The meridian is ' + e.time.meridian);
+         });
+       **/
+      $('#timepicker1').timepicker({
+        template: 'dropdown',
+        showMeridian: false,
+        minuteStep: 5,
+        showSeconds: false,
+        defaultTime: 'current',
+        showInputs: false,
+        disableFocus: false
+      });
+    </script>
+  </body>
+</html>

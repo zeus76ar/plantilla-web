@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="description" content="Plantilla Admin 2019">
+        <meta name="author" content="AB software">
+        <meta name="keywords" content="pantilla admin, w3.css, vue.js">
+
+        <title>Plantilla Admin - 2019 - Grafico</title>
+        <link rel="shortcut icon" type="image/png" href="assets/img/logo-generic.png">
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/w3css/w3.min.css">
+        <link rel="stylesheet" href="vendor/w3css/themes/w3-theme-blue.min.css">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- developing -->
+        <script src="vendor/js/vuejs/2.5.17/vue-dev.js"></script>
+
+        <!-- production -->
+        <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
+        and media queries -->
+        <!--[if lt IE 9]>
+        <script src="vendor/js/html5shiv.min.js"></script>
+        <script src="vendor/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="w3-light-grey">
+        <div id="app">
+            <vue-barratop></vue-barratop>
+            <vue-sidemenu
+            colormenu="color_menu"
+            colorsubmenu="color_submenu"
+            colormenusel="color_menu_selec">
+            </vue-sidemenu>
+
+            <vue-contenedor>
+                <vue-titulopag 
+                titulo="Grafico" 
+                icono="fa fa-pie-chart"
+                subtitulo="chart.js">
+                </vue-titulopag>
+
+                <div class="w3-container subcontenedor">
+                    <div class="w3-row-padding">
+                        <div class="w3-half">
+                            <div class="w3-card-2 w3-topbar w3-white">
+                                <header class="w3-container w3-border-bottom">
+                                    <h3>Grafico - Barras</h3>
+                                </header>
+
+                                <div class="w3-container w3-margin-top w3-margin-bottom">
+                                    <vue-grafico 
+                                    id_grafico="grafico1"
+                                    v-bind:tipo="barras.tipo"
+                                    v-bind:etiquetas="barras.etiquetas"
+                                    v-bind:datos="barras.datos"
+                                    v-bind:opciones="barras.extras"
+                                    v-bind:mostrar="barras.mostrar">
+                                    </vue-grafico>
+                                </div>
+
+                                <footer class="w3-container w3-border-top">
+                                    <h5>Footer</h5>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="w3-half">
+                            <div class="w3-card-2 w3-topbar w3-white">
+                                <header class="w3-container w3-border-bottom">
+                                    <h3>Grafico - Lineal</h3>
+                                </header>
+
+                                <div class="w3-container w3-margin-top w3-margin-bottom">
+                                    <vue-grafico 
+                                    id_grafico="grafico2"
+                                    v-bind:tipo="linea.tipo"
+                                    v-bind:etiquetas="linea.etiquetas"
+                                    v-bind:datos="linea.datos"
+                                    v-bind:opciones="linea.extras"
+                                    v-bind:mostrar="linea.mostrar">
+                                    </vue-grafico>
+                                </div>
+
+                                <footer class="w3-container w3-border-top">
+                                    <h5>Footer</h5>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w3-row-padding w3-margin-top">
+                        <div class="w3-half">
+                            <div class="w3-card-2 w3-topbar w3-white">
+                                <header class="w3-container w3-border-bottom">
+                                    <h3>Grafico - Torta</h3>
+                                </header>
+
+                                <div class="w3-container w3-margin-top w3-margin-bottom">
+                                    <vue-grafico 
+                                    id_grafico="grafico3"
+                                    v-bind:tipo="torta.tipo"
+                                    v-bind:etiquetas="torta.etiquetas"
+                                    v-bind:datos="torta.datos"
+                                    v-bind:opciones="torta.extras"
+                                    css="ancho_grafico"
+                                    v-bind:mostrar="torta.mostrar">
+                                    </vue-grafico>
+                                </div>
+
+                                <footer class="w3-container w3-border-top">
+                                    <h5>Footer</h5>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="w3-half">
+                            <div class="w3-card-2 w3-topbar w3-white">
+                                <header class="w3-container w3-border-bottom">
+                                    <h3>Grafico - Dona</h3>
+                                </header>
+
+                                <div class="w3-container w3-margin-top w3-margin-bottom">
+                                    <vue-grafico 
+                                    id_grafico="grafico4"
+                                    v-bind:tipo="dona.tipo"
+                                    v-bind:etiquetas="dona.etiquetas"
+                                    v-bind:datos="dona.datos"
+                                    v-bind:opciones="dona.extras"
+                                    css="ancho_grafico"
+                                    v-bind:mostrar="dona.mostrar">
+                                    </vue-grafico>
+                                </div>
+
+                                <footer class="w3-container w3-border-top">
+                                    <h5>Footer</h5>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <vue-footer></vue-footer>
+            </vue-contenedor>
+            <!-- End page content -->
+        </div>
+        <!-- /#app -->
+
+        <script src="assets/js/vue/components/v-barratop.js"></script>
+        <script src="assets/js/vue/components/v-sidemenu.js"></script>
+        <script src="assets/js/vue/components/v-contenedor.js"></script>
+        <script src="assets/js/vue/components/v-titulopag.js"></script>
+        <script src="assets/js/vue/components/v-footer.js"></script>
+
+        <script src="vendor/js/Chart.js/2.6.0/Chart.min.js"></script>
+        <script src="vendor/js/vuejs/components/vue-grafico.js"></script>
+        <script src="assets/js/grafico.js"></script>
+    </body>
+</html>

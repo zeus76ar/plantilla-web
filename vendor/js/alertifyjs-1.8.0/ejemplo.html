@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+            <title>Ejemplo AlertifyJS</title>
+            
+            <!-- include the style -->
+            <link rel="stylesheet" href="css/alertify.min.css" />
+            <!-- include a theme -->
+            <link rel="stylesheet" href="css/themes/default.min.css" />
+            <!-- theme semantic -->
+            <!-- <link rel="stylesheet" href="css/themes/semantic.min.css" /> -->
+            <!-- theme bootstrap -->
+            <!-- <link rel="stylesheet" href="css/themes/bootstrap.min.css" /> -->
+            
+            <style>
+                .ajs-message.ajs-custom {
+                    color: #31708f;
+                    background-color: #d9edf7;
+                    border-color: #31708f;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <p>
+                <a href="javascript:mostrarAlert()">[ Alert ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarConfirm()">[ Confirm ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarPrompt()">[ Prompt ]</a>
+            </p>
+            <p>
+                <a href="javascript:mostrarSuccess()">[ Success ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarError()">[ Error ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarWarning()">[ Warning ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarMessage()">[ Message ]</a>&nbsp;&nbsp;
+                <a href="javascript:mostrarCustom()">[ Custom ]</a>
+            </p>
+            
+            <!-- include the script -->
+            <script src="alertify.min.js"></script>
+            
+            <script>
+                alertify.defaults = {
+                    // dialogs defaults
+                    autoReset:true,
+                    basic:false,
+                    closable:true,
+                    closableByDimmer:true,
+                    frameless:false,
+                    maintainFocus:true, // <== global default not per instance, applies to all dialogs
+                    maximizable:true,
+                    modal:true,
+                    movable:true,
+                    moveBounded:false,
+                    overflow:true,
+                    padding: true,
+                    pinnable:true,
+                    pinned:true,
+                    preventBodyShift:false, // <== global default not per instance, applies to all dialogs
+                    resizable:true,
+                    startMaximized:false,
+                    // theme settings - default
+                    transition:'pulse',
+                    // theme settings - semantic
+                    //transition : 'zoom',
+                    // theme settings - bootstrap
+                    // transition : 'slide',
+                    // notifier defaults
+                    notifier:{
+                        // auto-dismiss wait time (in seconds)
+                        delay:5,
+                        // default position
+                        position:'bottom-right'
+                    },
+                    // language resources 
+                    glossary:{
+                        // dialogs default title
+                        title:'AlertifyJS',
+                        // ok button text
+                        ok: 'Aceptar',
+                        // cancel button text
+                        cancel: 'Cancelar'            
+                    },
+                    // theme settings - default
+                    theme:{
+                        // class name attached to prompt dialog input textbox.
+                        input:'ajs-input',
+                        // class name attached to ok button
+                        ok:'ajs-ok',
+                        // class name attached to cancel button 
+                        cancel:'ajs-cancel'
+                    }
+                    // theme settings - semantic
+                    /*
+                    theme:{
+                        ok : 'ui positive button',
+                        cancel : 'ui black button'
+                    }
+                    */
+                    // theme settings - bootstrap
+                    /*
+                    theme:{
+                        input : 'form-control',
+                        ok : 'btn btn-primary',
+                        cancel : 'btn btn-default'
+                    }
+                    */
+                };
+                
+                function mostrarAlert(){
+                    alertify.alert('Alert Title', 'Alert Message!', function(){});
+                }
+                
+                function mostrarConfirm(){
+                    alertify.confirm('Confirm Title', 'Confirm Message', function(){});
+                }
+                
+                function mostrarPrompt(){
+                    alertify.prompt( 'Prompt Title', 'Prompt Message',
+                    'Prompt Value',
+                    function(evt, value) { alert(value); }, function() { alert('Cancel'); }
+                    );
+                }
+                
+                function mostrarSuccess(){
+                    var notification = alertify.notify('sample', 'success', 5,
+                    function(){});
+                }
+                
+                function mostrarError(){
+                    var notification = alertify.notify('sample', 'error', 5,
+                    function(){});
+                }
+                
+                function mostrarWarning(){
+                    var notification = alertify.notify('sample', 'warning', 5,
+                    function(){});
+                }
+                
+                function mostrarMessage(){
+                    var notification = alertify.notify('sample', 'message', 5,
+                    function(){});
+                }
+                
+                function mostrarCustom(){
+                     //using custom CSS
+                     // .ajs-message.ajs-custom { color: #31708f;  background-color: #d9edf7;  border-color: #31708f; }
+                     var notification = alertify.notify('custom message.',
+                    'custom', 5, function(){});
+                }
+            </script>
+        </body>
+    </html>

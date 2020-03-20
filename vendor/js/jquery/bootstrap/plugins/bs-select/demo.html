@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bootstrap Select - Demo</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <!-- bootstrap select -->
+    <link href="./1.12.1/css/bootstrap-select.min.css" rel="stylesheet">
+    
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+    body {
+        padding-top: 70px;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Demo</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <form>
+        <h2>Standard select boxes</h2>
+        <select class="selectpicker">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+        
+        <br>
+        <h2>Select boxes with optgroups</h2>
+        <select class="selectpicker">
+          <optgroup label="Picnic">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </optgroup>
+          <optgroup label="Camping">
+            <option>Tent</option>
+            <option>Flashlight</option>
+            <option>Toilet Paper</option>
+          </optgroup>
+        </select>
+        
+        <br>
+        <h2>Multiple select boxes</h2>
+        <select class="selectpicker" multiple="multiple">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+        
+        <br>
+        <h2>Limit the number of selections</h2>
+        <div>
+          Limit the number of options that can be selected via the data-max-options
+          attribute. It also works for option groups. Customize the message
+          displayed when the limit is reached with maxOptionsText
+        </div>
+        <select class="selectpicker" multiple="multiple" data-max-options="2">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+        
+        <select class="selectpicker" multiple="multiple">
+          <optgroup label="Condiments" data-max-options="2">
+            <option>Mustard</option>
+            <option>Ketchup</option>
+            <option>Relish</option>
+          </optgroup>
+          <optgroup label="Breads" data-max-options="1">
+            <option>Plain</option>
+            <option>Steamed</option>
+            <option>Toasted</option>
+          </optgroup>
+        </select>
+        
+        <br>
+        <h1>Live search</h1>
+        
+        <h2>Live search</h2>
+        <div>
+          You can add a search input by passing data-live-search="true" attribute
+        </div>
+        <select class="selectpicker" data-live-search="true">
+          <option>Hot Dog, Fries and a Soda</option>
+          <option>Burger, Shake and a Smile</option>
+          <option>Sugar, Spice and all things nice</option>
+        </select>
+        
+        <br>
+        <h2>Key words</h2>
+        <div>
+          Add key words to options to improve their searchability using data-tokens
+        </div>
+        <select class="selectpicker" data-live-search="true">
+          <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+          <option data-tokens="mustard">Burger, Shake and a Smile</option>
+          <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+        </select>
+        
+        <br>
+        <h1>Custom button text</h1>
+        
+        <h2>Placeholder</h2>
+        <div>
+          Using the title attribute will set the default placeholder text when
+          nothing is selected. This works for both multiple and standard
+          select boxes
+        </div>
+        <h4>Simple</h4>
+        <select class="selectpicker" title="Choose one of the following...">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+        <h4>Multiple</h4>
+        <select class="selectpicker" multiple="multiple"
+        title="Choose one of the following...">
+          <option>Mustard</option>
+          <option>Ketchup</option>
+          <option>Relish</option>
+        </select>
+      </form>
+    </div><!-- /.container -->
+    
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../../../jquery-1.12.4.min.js"></script>
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="../../3.3.5/js/bootstrap.min.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <!-- bootstrap select -->
+    <script src="./1.12.1/js/bootstrap-select.min.js"></script>
+    <script src="./1.12.1/js/i18n/defaults-es_ES.min.js"></script>
+    
+    <script>
+    </script>
+  </body>
+</html>

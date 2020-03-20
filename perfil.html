@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="description" content="Plantilla Admin 2019">
+        <meta name="author" content="AB software">
+        <meta name="keywords" content="pantilla admin, w3.css, vue.js">
+
+        <title>Plantilla Admin - 2019 - Mi perfil</title>
+        <link rel="shortcut icon" type="image/png" href="assets/img/logo-generic.png">
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/w3css/w3.min.css">
+        <link rel="stylesheet" href="vendor/w3css/themes/w3-theme-blue.min.css">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- developing -->
+        <script src="vendor/js/vuejs/2.5.17/vue-dev.js"></script>
+
+        <!-- production -->
+        <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
+        and media queries -->
+        <!--[if lt IE 9]>
+        <script src="vendor/js/html5shiv.min.js"></script>
+        <script src="vendor/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="w3-light-grey">
+        <div id="app">
+            <vue-barratop></vue-barratop>
+            <vue-sidemenu
+            colormenu="color_menu"
+            colorsubmenu="color_submenu"
+            colormenusel="color_menu_selec">
+            </vue-sidemenu>
+
+            <vue-contenedor>
+                <vue-titulopag 
+                titulo="Mi perfil" 
+                subtitulo=""
+                icono="fa fa-user">
+                </vue-titulopag>
+
+                <div class="w3-container subcontenedor w3-row">
+                    <div class="w3-twothird">
+                        <form class="w3-card-2 w3-topbar w3-white">
+                            <header class="w3-container w3-border-bottom">
+                                <h3>Header</h3>
+                            </header>
+                            
+                            <div class="w3-container w3-margin-top w3-margin-bottom">
+                                <div class="w3-row-padding w3-margin-bottom">
+                                    <div class="w3-half">
+                                        <label>Nombre y Apellido</label>
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="Nombre y Apellido..." v-model="nom_ap">
+                                    </div>
+
+                                    <div class="w3-half">
+                                        <label>Email</label>
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="tu-email@server.com" v-model="email">
+                                    </div>
+                                </div>
+
+                                <div class="w3-row-padding">
+                                    <div class="w3-half">
+                                        <label>Usuario</label>
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="Usuario..." v-model="usuario">
+                                    </div>
+
+                                    <div class="w3-half">
+                                        <label>Contraseña</label>
+                                        <input class="w3-input w3-border" type="password"
+                                        placeholder="Contraseña..." v-model="pass">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <footer class="w3-container w3-padding w3-border-top">
+                                <button class="w3-button w3-border w3-theme-d1" 
+                                type="button"
+                                v-on:click.prevent="enviarDatos()">Aceptar</button>
+                                
+                                <button class="w3-button w3-border" type="button">Cancelar</button>
+                            </footer>
+                        </form>
+                        <!-- /.w3-card-2 -->
+                    </div>
+                </div>
+                <!-- /.w3-container -->
+
+                <vue-footer></vue-footer>
+            </vue-contenedor>
+            <!-- End page content -->
+        </div>
+        <!-- /#app -->
+
+        <script src="assets/js/vue/components/v-barratop.js"></script>
+        <script src="assets/js/vue/components/v-sidemenu.js"></script>
+        <script src="assets/js/vue/components/v-contenedor.js"></script>
+        <script src="assets/js/vue/components/v-titulopag.js"></script>
+        <script src="assets/js/vue/components/v-footer.js"></script>
+        
+        <script src="assets/js/perfil.js"></script>
+    </body>
+</html>

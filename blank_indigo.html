@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="description" content="Plantilla Admin 2019">
+        <meta name="author" content="AB software">
+        <meta name="keywords" content="pantilla admin, w3.css, vue.js">
+
+        <title>Plantilla Admin - 2019 - Blank page</title>
+        <link rel="shortcut icon" type="image/png" href="assets/img/logo-generic.png">
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/w3css/w3.min.css">
+        <link rel="stylesheet" href="vendor/w3css/themes/w3-theme-indigo.min.css">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- developing -->
+        <script src="vendor/js/vuejs/2.5.17/vue-dev.js"></script>
+
+        <!-- production -->
+        <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
+        and media queries -->
+        <!--[if lt IE 9]>
+        <script src="vendor/js/html5shiv.min.js"></script>
+        <script src="vendor/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="w3-light-grey">
+        <div id="app">
+            <vue-barratop></vue-barratop>
+            <vue-sidemenu
+            colormenu="color_menu"
+            colorsubmenu="color_submenu"
+            colormenusel="color_menu_selec">
+            </vue-sidemenu>
+
+            <vue-contenedor>
+                <vue-titulopag 
+                titulo="Blank" 
+                subtitulo=""
+                icono="fa fa-file">
+                </vue-titulopag>
+
+                <div class="w3-container subcontenedor">
+                    <div class="w3-card-2 w3-topbar w3-white w3-border-indigo">
+                        <header class="w3-container w3-border-bottom">
+                            <h3>Header</h3>
+                        </header>
+                        
+                        <div class="w3-container">
+                            <p>Lorem ipsum...</p>
+                        </div>
+
+                        <footer class="w3-container w3-border-top">
+                            <h5>Footer</h5>
+                        </footer>    
+                    </div> 
+                </div>
+                
+                <vue-footer></vue-footer>
+            </vue-contenedor>
+        </div>
+        <!-- /#app -->
+
+        <script src="assets/js/vue/components/v-barratop.js"></script>
+        <script src="assets/js/vue/components/v-sidemenu.js"></script>
+        <script src="assets/js/vue/components/v-contenedor.js"></script>
+        <script src="assets/js/vue/components/v-titulopag.js"></script>
+        <script src="assets/js/vue/components/v-footer.js"></script>
+
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

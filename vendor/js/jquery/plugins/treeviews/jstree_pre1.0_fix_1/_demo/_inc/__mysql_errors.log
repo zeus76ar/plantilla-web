@@ -1,0 +1,728 @@
+[2012-04-13 14:45:59] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2012-04-13 14:45:59] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] TRUNCATE TABLE `tree` <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] nf: no result set <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-13 14:45:59] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2012-04-13 14:45:59] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-13 14:45:59] No query pending <>
+[2012-04-16 16:57:13] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2012-04-16 16:57:13] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] TRUNCATE TABLE `tree` <>
+[2012-04-16 16:57:13] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] nf: no result set <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] nf: no result set <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:13] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:13] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:13] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:13] No query pending <>
+[2012-04-16 16:57:13] nf: no result set <>
+[2012-04-16 16:57:13] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] nf: no result set <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-04-16 16:57:14] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2012-04-16 16:57:14] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-04-16 16:57:14] No query pending <>
+[2012-08-07 00:26:16] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2012-08-07 00:26:16] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] TRUNCATE TABLE `tree` <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] nf: no result set <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-07 00:26:16] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2012-08-07 00:26:16] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-07 00:26:16] No query pending <>
+[2012-08-20 14:40:35] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2012-08-20 14:40:35] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] TRUNCATE TABLE `tree` <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] nf: no result set <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2012-08-20 14:40:35] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2012-08-20 14:40:35] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2012-08-20 14:40:35] No query pending <>
+[2013-01-07 15:14:15] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2013-01-07 15:14:15] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] TRUNCATE TABLE `tree` <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] nf: no result set <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-01-07 15:14:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2013-01-07 15:14:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-01-07 15:14:15] No query pending <>
+[2013-03-07 20:29:04] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2013-03-07 20:29:04] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] TRUNCATE TABLE `tree` <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] nf: no result set <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:04] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2013-03-07 20:29:04] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:04] No query pending <>
+[2013-03-07 20:29:27] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2013-03-07 20:29:27] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] TRUNCATE TABLE `tree` <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] nf: no result set <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-07 20:29:27] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2013-03-07 20:29:27] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-07 20:29:27] No query pending <>
+[2013-03-14 13:24:15] Connection error: Access denied for user 'root'@'localhost' (using password: NO) <>
+[2013-03-14 13:24:15] Could node connect for query: SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] TRUNCATE TABLE `tree` <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`id`, `parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 0, 1, 2, 0 ) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 1 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 1 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (1, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 2 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 2 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 2 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (2, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 4 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 4 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 4 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (4, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 0 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 0 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `id` = 5 <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] nf: no result set <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 5 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `position` = `position` + 1 WHERE `parent_id` = 5 AND `position` >= 0  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `left` = `left` + 2 WHERE `left` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] UPDATE `tree` SET `right` = `right` + 2 WHERE `right` >= 1  AND `id` NOT IN (-1)  <>
+[2013-03-14 13:24:15] INSERT INTO `tree` (`parent_id`, `position`, `left`, `right`, `level` ) VALUES (5, 0, 1, 2, 1) <>
+[2013-03-14 13:24:15] SELECT `id` , `parent_id` , `position` , `left` , `right` , `level` , `title` , `type` FROM `tree` WHERE `parent_id` = 1 ORDER BY `position` ASC <>
+[2013-03-14 13:24:15] No query pending <>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="description" content="Plantilla Admin 2019">
+        <meta name="author" content="AB software">
+        <meta name="keywords" content="pantilla admin, w3.css, vue.js">
+
+        <title>Plantilla Admin - 2019 - Listado</title>
+        <link rel="shortcut icon" type="image/png" href="assets/img/logo-generic.png">
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/w3css/w3.min.css">
+        <link rel="stylesheet" href="vendor/w3css/themes/w3-theme-blue.min.css">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- developing -->
+        <script src="vendor/js/vuejs/2.5.17/vue-dev.js"></script>
+
+        <!-- production -->
+        <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
+        and media queries -->
+        <!--[if lt IE 9]>
+        <script src="vendor/js/html5shiv.min.js"></script>
+        <script src="vendor/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="w3-light-grey">
+        <div id="app">
+            <vue-barratop></vue-barratop>
+            <vue-sidemenu
+            colormenu="color_menu"
+            colorsubmenu="color_submenu"
+            colormenusel="color_menu_selec">
+            </vue-sidemenu>
+
+            <vue-contenedor>
+                <vue-titulopag 
+                titulo="Tabla" 
+                subtitulo="Listado"
+                icono="fa fa-table">
+                </vue-titulopag>
+
+                <div class="w3-container subcontenedor">
+                    <div class="w3-card-2 w3-topbar w3-white">
+                        <header class="w3-container w3-border-bottom">
+                            <h3>Header</h3>
+                        </header>
+                        
+                        <div class="w3-container">
+                            <form class="w3-padding-16">
+                                <div class="w3-row-padding">
+                                    <div class="w3-quarter w3-margin-bottom">
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="Columna A" v-model="col_a">
+                                    </div>
+
+                                    <div class="w3-quarter w3-margin-bottom">
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="Columna B" v-model="col_b">
+                                    </div>
+
+                                    <div class="w3-quarter w3-margin-bottom">
+                                        <input class="w3-input w3-border" type="text"
+                                        placeholder="Columna C" v-model="col_c">
+                                    </div>
+
+                                    <div class="w3-quarter w3-margin-bottom">
+                                        <button class="w3-button w3-border w3-theme-d1 w3-hover-opacity"
+                                        type="button"
+                                        v-on:click.prevent="buscarDatos()">
+                                            <span class="fa fa-search"></span>
+                                            Buscar
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                            <div class="w3-right-align w3-padding-small">
+                                Mostrando 3 de 20 registros
+                            </div>
+
+                            <div class="w3-responsive">
+                                <table class="w3-table w3-striped w3-bordered w3-hoverable">
+                                    <thead>
+                                        <tr class="w3-text-theme">
+                                            <th class="w3-center celda_opciones">
+                                                <span class="fa fa-cog"></span>
+                                            </th>
+                                            <th>
+                                                Columna A
+                                            </th>
+                                            <th>
+                                                Columna B
+                                            </th>
+                                            <th>
+                                                Columna C
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr class="w3-hover-light-gray">
+                                            <td class="w3-center">
+                                                <div class="w3-bar">
+                                                    <a href="#" class="w3-bar-item w3-button 
+                                                    w3-tiny w3-border w3-light-gray">
+                                                        <span class="fa fa-pencil"></span>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="w3-bar-item  
+                                                    w3-button w3-tiny w3-border 
+                                                    w3-light-gray">
+                                                        <span class="fa fa-trash"></span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Dato 1
+                                            </td>
+                                            <td>
+                                                Dato 2
+                                            </td>
+                                            <td>
+                                                Dato 3
+                                            </td>
+                                        </tr>
+
+                                        <tr class="w3-hover-light-gray">
+                                            <td class="w3-center">
+                                                <div class="w3-bar">
+                                                    <a href="#" class="w3-bar-item w3-button 
+                                                    w3-tiny w3-border w3-light-gray">
+                                                        <span class="fa fa-pencil"></span>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="w3-bar-item  
+                                                    w3-button w3-tiny w3-border 
+                                                    w3-light-gray">
+                                                        <span class="fa fa-trash"></span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Dato 4
+                                            </td>
+                                            <td>
+                                                Dato 5
+                                            </td>
+                                            <td>
+                                                Dato 6
+                                            </td>
+                                        </tr>
+
+                                        <tr class="w3-hover-light-gray">
+                                            <td class="w3-center">
+                                                <div class="w3-bar">
+                                                    <a href="#" class="w3-bar-item w3-button 
+                                                    w3-tiny w3-border w3-light-gray">
+                                                        <span class="fa fa-pencil"></span>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="w3-bar-item  
+                                                    w3-button w3-tiny w3-border 
+                                                    w3-light-gray">
+                                                        <span class="fa fa-trash"></span>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                Dato 7
+                                            </td>
+                                            <td>
+                                                Dato 8
+                                            </td>
+                                            <td>
+                                                Dato 9
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <footer class="w3-container w3-border-top w3-padding">
+                            <div class="w3-bar w3-small w3-right-align">
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">
+                                    <span class="fa fa-angle-left"></span>
+                                </a>
+                                <a href="#" class="w3-button w3-border w3-text-theme w3-hover-opacity"><strong>1</strong></a>
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">2</a>
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">3</a>
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">4</a>
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">5</a>
+                                <a href="#" class="w3-button w3-border w3-hover-opacity">
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </div> 
+                        </footer>
+                    </div>
+                    <!-- w3-card -->
+                </div>
+                <!-- /-w3-container -->
+
+                <vue-footer></vue-footer>
+            </vue-contenedor>
+            <!-- End page content -->
+        </div>
+        <!-- /#app -->
+
+        <script src="assets/js/vue/components/v-barratop.js"></script>
+        <script src="assets/js/vue/components/v-sidemenu.js"></script>
+        <script src="assets/js/vue/components/v-contenedor.js"></script>
+        <script src="assets/js/vue/components/v-titulopag.js"></script>
+        <script src="assets/js/vue/components/v-footer.js"></script>
+        
+        <script src="assets/js/listado.js"></script>
+    </body>
+</html>

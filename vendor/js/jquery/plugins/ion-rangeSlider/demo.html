@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>rangeSlider - Demo</title>
+
+        <!-- opcional -->
+        <link href="./vendor/normalize.css" rel="stylesheet">
+
+        <!-- plugin -->
+        <link href="./css/ion.rangeSlider.css" rel="stylesheet">
+
+        <!-- plugin skin (opcional) -->
+        <link href="./css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
+
+        <style type="text/css">
+            form{
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <form method="post" action="demo.php">
+                <label>Rango Simple</label>
+                <input type="text" id="rango" name="rango" />
+                <br>
+                <label>Rango Doble</label>
+                <input type="text" id="rango_1" name="rango_1" />
+                <br>
+                <button type="submit">Enviar datos</button>
+            </form>
+        </div>
+        <!-- /.container -->
+
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="../../jquery-1.12.4.min.js"></script>
+
+        <!-- plugin -->
+        <script src="./js/ion.rangeSlider.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#rango").ionRangeSlider({
+                    min: 100,
+                    max: 1000,
+                    from: 500
+                });
+
+                $("#rango_1").ionRangeSlider({
+                    type: "double",
+                    grid: true,
+                    min: 0,
+                    max: 1000,
+                    from: 200,
+                    to: 800,
+                    prefix: "$"
+                });
+            });
+        </script>
+    </body>
+
+</html>

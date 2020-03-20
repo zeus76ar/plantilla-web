@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Filestyle - Demo</title>
+        <!-- CSS -->
+        <link rel="stylesheet" 
+        href="//192.168.1.55/www/jquery/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" 
+        href="//192.168.1.55/www/jquery/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Filestyle - Demo</h1>
+
+            <form method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="archivo">Archivo</label>
+                            <input type="file" id="archivo">
+                            <p class="help-block">Formatos permitidos: .txt, .pdf</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- JS -->
+        <script src="//192.168.1.55/www/jquery/jquery-1.12.4.min.js"></script>
+        <script src="//192.168.1.55/www/jquery/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+        <script src="//192.168.1.55/www/jquery/bootstrap/plugins/bs-filestyle/bootstrap-filestyle.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $('#archivo').filestyle({
+		            input: true,
+		            icon: true,
+		            badge: true,
+		            buttonText: "Seleccionar...",
+		            buttonName: "btn-default",//'btn--default', 'btn-primary'
+		            size: "nr",//'sm', 'nr', 'lg'
+		            iconName: "glyphicon glyphicon-folder-open",//glyphs of bootstrap
+		            disabled: false,
+		            buttonBefore: false
+                });
+            });
+        </script>
+    </body>
+</html>

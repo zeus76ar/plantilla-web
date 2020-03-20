@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <meta name="description" content="Plantilla Admin 2019">
+        <meta name="author" content="AB software">
+        <meta name="keywords" content="pantilla admin, w3.css, vue.js">
+
+        <title>Plantilla Admin - 2019 - Input spinner</title>
+        <link rel="shortcut icon" type="image/png" href="assets/img/logo-generic.png">
+
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto&display=swap">
+        <link rel="stylesheet" href="vendor/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/w3css/w3.min.css">
+        <link rel="stylesheet" href="vendor/w3css/themes/w3-theme-blue.min.css">
+        
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- developing -->
+        <script src="vendor/js/vuejs/2.5.17/vue-dev.js"></script>
+
+        <!-- production -->
+        <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
+        and media queries -->
+        <!--[if lt IE 9]>
+        <script src="vendor/js/html5shiv.min.js"></script>
+        <script src="vendor/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    
+    <body class="w3-light-grey">
+        <div id="app">
+            <vue-barratop></vue-barratop>
+            <vue-sidemenu
+            colormenu="color_menu"
+            colorsubmenu="color_submenu"
+            colormenusel="color_menu_selec">
+            </vue-sidemenu>
+
+            <vue-contenedor>
+                <vue-titulopag 
+                titulo="Input Spinner" 
+                icono="fa fa-file"
+                subtitulo="">
+                </vue-titulopag>
+                
+                <div class="w3-container subcontenedor w3-row">
+                    <div class="w3-twothird">
+                        <form class="w3-card-2 w3-topbar w3-white">
+                            <header class="w3-container w3-border-bottom">
+                                <h3>Header</h3>
+                            </header>
+
+                            <div class="w3-container w3-margin-top w3-margin-bottom">
+                                <label>Numero</label>
+
+                                <vue-spinner-input
+                                v-model="num" 
+                                minimo="0"
+                                maximo="10"
+                                v-bind:autofocus="true"
+                                v-bind:mostrar_leyenda="false" 
+                                css_borde="w3-clear" 
+                                css_boton="w3-button w3-border w3-left" 
+                                css_input="w3-input w3-border w3-left"
+                                css_leyenda="w3-small"
+                                v-bind:estilos_input="estilos_input">
+                                </vue-spinner-input>
+
+                                <span class="w3-small">Min: 0 - Max: 10</span>
+                                
+                                <p class="">
+                                    Ingresado: {{ num }}
+                                </p>
+                            </div>
+
+                            <footer class="w3-container w3-border-top">
+                                <h5>Footer</h5>
+                            </footer>
+                        </form>
+                    </div>
+                </div>
+                
+                <vue-footer></vue-footer>
+            </vue-contenedor>
+        </div>
+        <!-- /#app -->
+
+        <script src="assets/js/vue/components/v-barratop.js"></script>
+        <script src="assets/js/vue/components/v-sidemenu.js"></script>
+        <script src="assets/js/vue/components/v-contenedor.js"></script>
+        <script src="assets/js/vue/components/v-titulopag.js"></script>
+        <script src="assets/js/vue/components/v-footer.js"></script>
+
+        <script src="vendor/js/vuejs/components/vue-spinner-input.js"></script>
+        <script src="assets/js/input-spinner.js"></script>
+    </body>
+</html>

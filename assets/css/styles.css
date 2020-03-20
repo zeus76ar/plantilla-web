@@ -1,0 +1,63 @@
+html, body, h1, h2, h3, h4, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 100%;
+}
+
+/* estilos generales*/
+form label {
+    font-weight: bold;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    vertical-align: text-bottom;
+}
+
+.menu_ppal {
+    font-size: 0.9em;
+}
+
+.subcontenedor {
+    min-height: 770px;
+}
+
+.celda_opciones {
+    width: 16%;
+}
+
+.ancho_grafico {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* colores menu y submenus */
+.color_menu {
+    color: #ffffff !important;
+    background-color: #1e282c !important;
+}
+
+.color_submenu {
+    color:#ffffff !important;
+    background-color:#2c3b41 !important;
+}
+
+.color_menu_selec {
+    color:#ffffff !important;
+    background-color:#1a2226 !important;
+}
+
+/* clases para datetime */
+.theme-orange .vdatetime-popup__header,
+.theme-orange .vdatetime-calendar__month__day--selected > span > span,
+.theme-orange .vdatetime-calendar__month__day--selected:hover > span > span {
+    background: #FF9800;
+}
+
+.theme-orange .vdatetime-year-picker__item--selected,
+.theme-orange .vdatetime-time-picker__item--selected,
+.theme-orange .vdatetime-popup__actions__button {
+    color: #ff9800;
+}
