@@ -1,1 +1,0 @@
-https://github.com/logaretm/vee-validate
