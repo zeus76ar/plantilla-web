@@ -20,6 +20,8 @@ Luego copias los archivos dentro del directorio raiz de tu servidor.
 
 * [W3CSS](https://www.w3schools.com/w3css/) - El framework CSS usado.
 * [Vue.js](https://vuejs.org/v2/guide/) - El framework JS usado.
+* [Font Awesome](https://fontawesome.com/v4.7.0/icons/) - Set de iconos usado.
+* [Font Roboto](https://fonts.googleapis.com/css?family=Roboto&display=swap) - Fuente utilizada.
 
 
 ## Autores ✒️
