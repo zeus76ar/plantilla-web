@@ -38,7 +38,7 @@ Vue.component('vue-barratop', {
     '               Back-end: {{ backend }}<br>' +
     '               DB: {{ db }}<br>' +
     '           </p>' +
-    '           <strong>© 2018. Todos los derechos reservados.</strong>' +
+    '           <strong>© 2018.</strong>' +
     '       </div>' +
     '   </div>' +
     '</div></div>',
