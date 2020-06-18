@@ -25,7 +25,7 @@
         <!-- production -->
         <!-- <script src="vendor/js/vuejs/2.5.17/vue.js"></script> -->
 
-        <script src="//maps.googleapis.com/maps/api/js?key="></script>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCgVC5P96ekkBDP0N6CA6uqwxA8njjvqaY"></script>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements 
         and media queries -->
