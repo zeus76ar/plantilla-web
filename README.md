@@ -1,7 +1,7 @@
 # Plantilla web para front-end
-
 Esta es un plantilla front-end para utilizar en el desarrollo de una aplicacion web o un sistema web. Utiliza como base W3CSS y Vuejs.
 
+![Demo](screenshot.jpg "Demo")
 
 ## Comenzando 🚀
 
