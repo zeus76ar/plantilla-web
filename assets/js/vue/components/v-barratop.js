@@ -47,8 +47,8 @@ Vue.component('vue-barratop', {
             mostrar: 'none',
             titulo: 'Plantilla 2019',
             subtitulo: 'Mi plantilla web 2019',
-            version: '2020.03',
-            subversion: '17',
+            version: '2020.06',
+            subversion: '24',
             frontend: 'W3.css, Vue.js',
             backend: 'PHP 5, Flight.',
             db: 'MySQL'
