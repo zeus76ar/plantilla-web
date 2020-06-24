@@ -470,10 +470,10 @@ Vue.component('vue-horario', {
     '               <tr>' +
     '                   <td class="w3-right-align w3-large" ' +
     '                   v-for="d in item">' +
-    '                       <a style="cursor:pointer; text-decoration: underline;" ' +
+    '                       <a style="cursor:pointer;" ' +
     '                       v-if="buscarEvento(d.fecha, \'\', \'m\') == \'*\'" ' +
     '                       v-on:click="seleccionarDia(d.fecha)">' +
-    '                           {{ d.dia }}' +
+    '                          ({{ d.dia }})' +
     '                       </a>' +
     '                       <span v-else>' +
     '                           {{ (d.dia == \'\') ? \'&nbsp;\' : d.dia }}' +
