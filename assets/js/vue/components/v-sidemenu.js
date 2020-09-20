@@ -160,6 +160,10 @@ Vue.component('vue-sidemenu', {
     '           class="w3-bar-item w3-button w3-padding">' +
     '               &nbsp;&nbsp;<i class="fa fa-file"></i> Horario' +
     '           </a>' + 
+    '           <a href="sel_fecha.html" ' +
+    '           class="w3-bar-item w3-button w3-padding">' +
+    '               &nbsp;&nbsp;<i class="fa fa-file"></i> Sel-Fecha' +
+    '           </a>' + 
     '           <button class="w3-button w3-block w3-left-align" ' +
     '           v-bind:class="colorsubmenu" v-on:click="verAccordion(2)">' +
     '               &nbsp;&nbsp;<i class="fa fa-square-o"></i> Campos <i ' +
