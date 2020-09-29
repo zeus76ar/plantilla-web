@@ -16,6 +16,10 @@ Vue.component('vue-selfecha', {
             // 'dd/mm/aaaa', 'dd-mm-yyyy'
             type: String,
             required: true
+        },
+        altura_max: {
+            type: Number,
+            default: 160
         }
     },
     data: function() {
@@ -195,6 +199,7 @@ Vue.component('vue-selfecha', {
     '    v-bind:close-on-select="true" ' +
     '    v-bind:allow-empty="false" ' +
     '    v-bind:show-labels="false" ' +
+    '    v-bind:maxHeight="altura_max" ' +
     '    placeholder="Dia..."' +
     '    name="dia">' +
     '        <span slot="noResult">No hay concidencias.</span>' +
@@ -210,6 +215,7 @@ Vue.component('vue-selfecha', {
     '    v-bind:close-on-select="true" ' +
     '    v-bind:allow-empty="false" ' +
     '    v-bind:show-labels="false" ' + 
+    '    v-bind:maxHeight="altura_max" ' +
     '    placeholder="Mes..."' +
     '    name="mes">' +
     '        <span slot="noResult">No hay concidencias.</span>' +
@@ -223,6 +229,7 @@ Vue.component('vue-selfecha', {
     '    v-bind:close-on-select="true" ' +
     '    v-bind:allow-empty="false" ' +
     '    v-bind:show-labels="false" ' +
+    '    v-bind:maxHeight="altura_max" ' +
     '    placeholder="Año..."' +
     '    name="anio">' +
     '        <span slot="noResult">No hay concidencias.</span>' +
